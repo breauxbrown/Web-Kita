@@ -1,0 +1,259 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+.carousel {
+  margin-bottom: 4rem;
+}
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+.carousel-item img {
+    max-width: 100%; /* Limit max width of images */
+    height: auto; /* Maintain aspect ratio */
+    position: relative; /* Keep image positioning */
+    object-fit: contain; /* Ensure image fits in the area */
+    opacity: 0.3;
+}
+
+.carousel-item {
+    height: auto; /* Let height adjust to image */
+}
+.carousel-caption {
+  color: #367045;
+}
+
+/* Limit maximum size on desktop */
+@media (min-width: 100em) {
+    .carousel-item img {
+        max-width: 80%; /* Limit max width on desktop */
+        margin: 0 auto; /* Center image */
+        display: block; /* Treat as block element */
+    }
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+/* Featurettes
+------------------------- */
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.napbar li a {
+  display: block;
+  color: white !important; /* Force white color */
+  background-color: #759bd9;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  opacity: 1 !important; /* Ensure no transparency */
+  border-bottom: 100px solid thin black !important;
+}
+
+.napbar li a:hover:not(.active) {
+  background-color: grey; /* Hover background color */
+}
+
+.active {
+  background-color: white; /* Active item background */
+  color: black; /* Active item text color */
+}
+
+.navbar-nav .nav-link {
+  font-weight: bold; /* Bold text */
+  opacity: 1; /* Remove transparency */
+}
+
+/* Flexbox and card adjustments */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-md-6 { /* Updated from col-md-4 to col-md-6 */
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  min-height: 300px; /* Consistent card height */
+}
+
+.card-body {
+  flex-grow: 1; /* Fills the available space */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Space content and buttons */
+}
+
+.card-text {
+  flex-grow: 1; /* Text fills available space in card-body */
+}
+
+.card {
+  margin-bottom: 20px; /* Space between cards */
+}
+
+.card-body h2 a,
+.card-body h5 a {
+  text-decoration: none;
+  color: #333; /* Default link color */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.card-body h2 a:hover,
+.card-body h5 a:hover {
+  color: #28a745; /* Hover color */
+}
+
+.card-body p {
+  font-size: 0.9rem; /* Adjust text size */
+  line-height: 1.5; /* Line spacing */
+}
+
+.card-img-top {
+  object-fit: cover; /* Maintain image proportions */
+  width: 100%; /* Full width */
+  height: 255px; /* Set image height */
+}
+
+.btn-sm {
+  padding: 0.375rem 0.75rem; /* Button padding */
+}
+
+.text-right {
+  text-align: right;
+}
+
+.btn-group,
+.text-muted {
+  margin-top: auto; /* Align buttons and muted text at the bottom */
+  display: block;
+  text-align: right; /* Right align */
+}
+
+.card-footer {
+  text-align: right;
+}
+
+/* Optional: Responsive settings */
+@media (max-width: 768px) {
+  .col-md-6 { /* Updated from col-md-4 to col-md-6 */
+    min-height: auto;
+  }
+}
+
+.card p {
+  font-size: 17px; /* Card paragraph size */
+}
+
+/* Hover effect - increase shadow and move up */
+.card:hover {
+  transform: translateY(-10px); /* Move card up */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15), 0 6px 15px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+}
+
+/* Optional: Customize the button color and effect */
+.card .btn-success {
+  transition: background-color 0.3s ease;
+}
+
+.card .btn-success:hover {
+  background-color: #218838; /* Darker green on hover */
+  color: #fff;
+}
+
+/* FILTER MONOCHROME EFFECT FOR IMAGES */
+.col-md-6 img { /* Updated from col-md-4 to col-md-6 */
+  filter: grayscale(100%); /* Monochrome effect */
+  transition: filter 0.5s ease; /* Smooth transition */
+}
+
+.col-md-6 img:hover { /* Updated from col-md-4 to col-md-6 */
+  filter: grayscale(0%); /* Color on hover */
+}
+
+/* FOOTER STYLING */
+.footer {
+  bottom: 0;
+  width: 100%;
+  background-color: skyblue;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.footerlist {
+  text-decoration: none;
+  color: black;
+  margin: 0 15px;
+}
+
+.footer p {
+  margin: 0;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media (min-width: 40em) {
+  /* Increase size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+
